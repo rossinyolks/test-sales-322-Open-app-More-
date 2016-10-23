@@ -28,8 +28,10 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-
-    speech = "aaa"
+    if req.get("result").get("action") == "one":
+        speech = "aaa"
+    else:
+        speech = "bbb"
 
     print("Response:")
     print(speech)
