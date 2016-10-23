@@ -11,10 +11,6 @@ from flask import make_response
 import gdata.spreadsheet.service
 import gdata.docs.service
 
-import json
-with open("GoogleAppPw.json") as fh:
-    config = json.load(fh)
-
 # Create connection object
 client = gdata.spreadsheet.service.SpreadsheetsService()
 
