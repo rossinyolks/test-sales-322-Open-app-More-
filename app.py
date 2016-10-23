@@ -44,9 +44,9 @@ def makeWebhookResult(req):
     return {
         "speech": speech,
         "displayText": speech,
-        "data": {},
-        "contextOut": [],
-        "source": "apiai-onlinestore-shipping"
+        #"data": {},
+        #"contextOut": [],
+        "source": "test-sales-322-Open-app-More-"
     }
 
 
