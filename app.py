@@ -8,6 +8,19 @@ from flask import Flask
 from flask import request
 from flask import make_response
 
+import gdata.spreadsheet.service
+
+# Create connection object
+client = gdata.spreadsheet.service.SpreadsheetsService()
+
+# Login using credentials
+client.ClientLogin(config['rossinyolks@gmail.com'], config['9585520Valencia'])
+
+# List all spreadsheets
+documents_feed = client.GetSpreadsheetsFeed()
+for document_entry in documents_feed.entry:
+    print document_entry.title.text
+
 # Flask app should start in global layout
 app = Flask(__name__)
 
