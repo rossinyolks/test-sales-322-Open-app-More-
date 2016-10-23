@@ -9,6 +9,7 @@ from flask import request
 from flask import make_response
 
 import gdata.spreadsheet.service
+import gdata.docs.service
 
 # Create connection object
 client = gdata.spreadsheet.service.SpreadsheetsService()
