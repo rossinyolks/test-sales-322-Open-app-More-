@@ -3,6 +3,7 @@
 import urllib
 import json
 import os
+import gdata.service
 
 from flask import Flask
 from flask import request
